@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentText = originalText.substring(0, i + 1);
         typewriterElement.innerHTML = currentText;
         i++;
-        setTimeout(typeWriter, 100); 
+        setTimeout(typeWriter, 50); 
       } else {
         
         typewriterElement.classList.add('complete');
@@ -50,5 +50,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     
-    setTimeout(typeWriter, 500);
+    setTimeout(typeWriter, 200);
   });
