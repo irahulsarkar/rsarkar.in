@@ -1,0 +1,445 @@
+:root {
+    --bg-color: #2c2c2e;
+    --heading-text: #d3d3d3;
+    --card-bg: #C9C8C7;
+    --toggle-bg: #ffffff;
+    --text-color: #2c2c2e;
+    --svg-color: #2c2c2e;
+    --card-text: #2c2c2e;
+    --hover-col: #f5b642;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #C9C8C7;
+    --heading-text: #2c2c2e;
+    --card-bg: #2c2c2e;
+    --text-color: #C9C8C7;
+    --toggle-bg: #ffffff;
+    --svg-color: #c9c8c7;
+    --card-text: #2c2c2e;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-Light.eot);
+    src: url(../fonts/apercu/Apercu-Light.eot?#iefix) format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-Light.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-Light.woff) format("woff"),
+      url(..assets/fonts/apercu/Apercu-Light.ttf) format("truetype"),
+      url(..assets/fonts/apercu/Apercu-Light.svg#Apercu-Light) format("svg");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-LightItalic.eot);
+    src: url(../fonts/apercu/Apercu-LightItalic.eot?#iefix)
+      format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-LightItalic.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-LightItalic.woff) format("woff"),
+      url(..assets/fonts/apercu/Apercu-LightItalic.ttf) format("truetype"),
+      url(..assets/fonts/apercu/Apercu-LightItalic.svg#Apercu-LightItalic)
+      format("svg");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-Regular.eot);
+    src: url(../fonts/apercu/Apercu-Regular.eot?#iefix)
+      format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-Regular.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-Regular.woff) format("woff"),
+      url(..assets/fonts/apercu/Apercu-Regular.ttf) format("truetype"),
+      url(..assets/fonts/apercu/Apercu-Regular.svg#Apercu-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-Italic.eot);
+    src: url(../fonts/apercu/Apercu-Italic.eot?#iefix) format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-Italic.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-Italic.woff) format("woff"),
+      url(..assets/fonts/apercu/Apercu-Italic.ttf) format("truetype"),
+      url(..assets/fonts/apercu/Apercu-Italic.svg#Apercu-Italic) format("svg");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-Medium.eot);
+    src: url(../fonts/apercu/Apercu-Medium.eot?#iefix)
+      format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-Medium.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-Medium.woff) format("woff"),
+      url(../fonts/apercu/Apercu-Medium.ttf) format("truetype"),
+      url(../fonts/apercu/Apercu-Medium.svg#Apercu-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-MediumItalic.eot);
+    src: url(../fonts/apercu/Apercu-MediumItalic.eot?#iefix)
+      format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-MediumItalic.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-MediumItalic.woff) format("woff"),
+      url(../fonts/apercu/Apercu-MediumItalic.ttf) format("truetype"),
+      url(../fonts/apercu/Apercu-MediumItalic.svg#Apercu-MediumItalic)
+      format("svg");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-Bold.eot);
+    src: url(../fonts/apercu/Apercu-Bold.eot?#iefix) format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-Bold.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-Bold.woff) format("woff"),
+      url(../fonts/apercu/Apercu-Bold.ttf) format("truetype"),
+      url(../fonts/apercu/Apercu-Bold.svg#Apercu-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Apercu;
+    src: url(../fonts/apercu/Apercu-BoldItalic.eot);
+    src: url(../fonts/apercu/Apercu-BoldItalic.eot?#iefix)
+      format("embedded-opentype"),
+      url(..assets/fonts/apercu/Apercu-BoldItalic.woff2) format("woff2"),
+      url(../fonts/apercu/Apercu-BoldItalic.woff) format("woff"),
+      url(../fonts/apercu/Apercu-BoldItalic.ttf) format("truetype"),
+      url(../fonts/apercu/Apercu-BoldItalic.svg#Apercu-BoldItalic)
+      format("svg");
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system,
+      BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    display: flexbox;
+    flex-direction: column;
+    padding-top: 80px; /* Add padding to the top of the body to account for the fixed navbar height */
+    box-sizing: border-box; /* Include padding in body's total width/height */
+    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+    position: relative; /* Needed for absolute positioning of notification */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .nav-bar {
+    background-color: var(--card-bg);
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: fixed; /* Make it fixed */
+    top: 0; /* Stick it to the top */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000; /* High z-index to ensure it's on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  
+  
+  .theme-toggle {
+    background: var(--toggle-bg);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .theme-toggle svg {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    position: absolute;
+  }
+  
+  .theme-toggle .sun {
+    color: #000000;
+  }
+  
+  .theme-toggle .moon {
+    color: var(--card-bg);
+    transform: rotate(-720deg);
+    opacity: 0;
+  }
+  
+  [data-theme="dark"] .theme-toggle .sun {
+    transform: rotate(720deg);
+    opacity: 0;
+  }
+  
+  [data-theme="dark"] .theme-toggle .moon {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  
+  .theme-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme-notification.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .intro-container {
+    background-color: var(--card-bg);
+    width: 320px;
+    height: 350px;
+    margin: 20px auto 0;
+    max-width: 100%;
+    border-bottom: 10px #f5b642 solid;
+    position: relative;
+    margin-top: 0px;
+    border-top-right-radius: 100px;
+    transition: border-bottom-color 0.3s ease;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  
+  
+  
+  .profile-pic-container {
+    height: 180px;
+    width: 320px;
+    background-color: #f5b642;
+    max-width: 100%;
+    margin-left: 50%;
+    margin: 0 auto;
+    border-top-right-radius: 100px;
+    margin-top: 190px;
+    position: relative;
+  }
+  
+  .profile-pic-container img {
+    width: 320px;
+    height: 320px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .intro-text {
+    
+    margin-bottom: 0px;
+    padding: 10px 30px;
+    position: relative;
+    color: var(--text-color);
+  }
+  
+  .intro-text h1 {
+    font-size: 1.5rem;
+    font-weight: 4500;
+  }
+  
+  .svg-wave img {
+    margin-left: 5px;
+    width: 25px;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .typewriter-target {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .typewriter-target::after {
+    content: "|";
+    position: absolute;
+    color: #f5b642;
+    animation: blink 1s step-end infinite;
+  }
+  
+  .typewriter-target.complete::after {
+    display: none;
+  }
+  
+  @keyframes blink {
+    from,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .social-container {
+    height: 125px;
+    width: 320px;
+    background-color: var(--card-bg);
+    max-width: 100%;
+    margin-left: 50%;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 10px #f5b642 solid;
+    border-radius: 10px;
+    margin-bottom: px;
+
+  }
+
+  .social-links p {
+    font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-align:center;
+    color: var(--text-color);
+    padding-top: 10px;
+}
+
+.social-links {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.social-icons a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons a:hover {
+    transform: translateY(-2px);
+    color: #f5b642;
+}
+
+
+ 
+ 
+ 
+ .social-name {
+     position: absolute;
+     top: 100%; 
+     left: 50%;
+     transform: translateX(-50%);
+     color: var(--text-color);
+     padding: 5px 10px;
+     font-size: 0.45em;
+     white-space: nowrap;
+     opacity: 0;
+     transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+     font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+     
+     
+ }
+ 
+ .social-icons a:hover .social-name {
+     top: calc(100% + 5px); 
+     opacity: 1;
+     
+ }
+
+ .social-container2 {
+    height: 700px;
+    width: 320px;
+    background-color: var(--card-bg);
+    max-width: 100%;
+    margin-left: 50%;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 10px #f5b642 solid;
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+  }
+
+  /* scroll reveal function */
+
+  
+.social-container, .social-container2 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 
+      opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .social-container.reveal, .social-container2.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .social-icons a {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 
+      opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      color 0.3s ease;
+  }
+  
+  .social-container.reveal .social-icons a,
+  .social-container2.reveal .social-icons a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .social-icons a:nth-child(1) { transition-delay: 0.1s; }
+  .social-icons a:nth-child(2) { transition-delay: 0.2s; }
+  .social-icons a:nth-child(3) { transition-delay: 0.3s; }
+  .social-icons a:nth-child(4) { transition-delay: 0.4s; }
+  .social-icons a:nth-child(5) { transition-delay: 0.5s; }
